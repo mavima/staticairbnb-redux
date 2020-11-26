@@ -4,7 +4,23 @@ body {
 
 #root {
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
 }
+
+.flat-list {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.flat {
+  cursor: pointer;
+  border: 6px solid transparent;
+}
+
+.flat.selected {
+  border: 4px solid limeGreen;
+}
+
+@import "card";
